@@ -1,0 +1,157 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+a {
+  margin: 10px;
+  padding: 20px;
+}
+#main-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*================
+ PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto 0 auto;
+  }
+  
+  /* ヘッダー */
+  #header {
+    display: flex;
+    font-size: 34px;
+    margin: 20px;
+  }
+  .myprofile {
+    text-decoration: none;
+    position: relative;
+    left: 200px;
+    border: solid 1px black;
+    font-weight: bold;
+  }
+  .myprofile:link {
+    color: black;
+  }
+  .myprofile:visited{
+    color: black;
+  }
+  .myprofile:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .myprofile:active {
+    color: black;
+  }
+  #nav-pc {
+    position: absolute;
+    right: 250px;
+    padding: 20px 10px;
+    margin: 10px;
+    font-weight: bold;
+  }
+  #nav-pc > a {
+    text-decoration: none;
+  }
+  #nav-pc > a:link {
+    color: black;
+  }
+  #nav-pc > a:visited {
+    color: black;
+  }
+  #nav-pc > a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  #nav-pc > a:active {
+    color: black;
+  }
+  #nav-sp {
+    display: none;
+  }
+
+  /* アバウト */
+  #about {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  #about-img > img {
+    width: 60%;
+    border-radius: 100px;
+    position: relative;
+    left: 20px;
+  }
+  #about-content {
+    margin: 0;
+    position: relative;
+    right: 70px;
+    bottom: 20px;
+  }
+
+  /* ワークス */
+  #works {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+  }
+  #works1, #works2, #works3 {
+    margin: 10px;
+    width: 16%;
+    text-align: center;
+  }
+  .works-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* コピーライト */
+  #footer {
+    margin: 20px;
+  }
+}
+
+/*================
+ スマホ用のスタイル 
+=================*/
+@media screen and (max-width: 767px) {
+  /* 横幅設定 */
+  body {
+    min-width: 375px;
+    margin: 0 auto 0 auto;
+  }
+  
+  /* ヘッダー */
+  #header {
+    font-size: 34px;
+  }
+  #nav-sp {
+    display: flex;
+    margin-right: 0;
+  }
+  #nav-pc {
+    display: none;
+  }
+}
