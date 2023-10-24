@@ -33,13 +33,13 @@ a {
 @media screen and (min-width: 768px) {
   /* 横幅設定 */
   body {
-    max-width: 1080px;
     min-width: 960px;
     margin: 0 auto 0 auto;
   }
   
   /* ヘッダー */
   #header {
+    max-width: 1200px;
     display: flex;
     font-size: 34px;
     margin: 20px;
@@ -93,6 +93,7 @@ a {
 
   /* アバウト */
   #about {
+    max-width: 1200px;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -112,6 +113,7 @@ a {
 
   /* ワークス */
   #works {
+    max-width: 1200px;
     text-align: left;
     display: flex;
     justify-content: center;
