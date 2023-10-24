@@ -8,6 +8,7 @@ body {
 
 h1 {
   font-size: 34px;
+  margin: 20% 0 10% 0;
 }
 
 h2 {
@@ -18,8 +19,8 @@ p {
   font-size: 18px;
 }
 a {
-  margin: 10px;
-  padding: 20px;
+  margin: 0 10px;
+  padding: 0 20px;
 }
 #main-img {
   margin: 0;
@@ -41,13 +42,13 @@ a {
   #header {
     max-width: 1200px;
     display: flex;
+    justify-content: space-between;
     font-size: 34px;
     margin: 20px;
+    flex-wrap: wrap;
   }
   .myprofile {
     text-decoration: none;
-    position: relative;
-    left: 200px;
     border: solid 1px black;
     font-weight: bold;
   }
@@ -65,8 +66,6 @@ a {
     color: black;
   }
   #nav-pc {
-    position: absolute;
-    right: 250px;
     padding: 20px 10px;
     margin: 10px;
     font-weight: bold;
@@ -94,21 +93,23 @@ a {
   /* アバウト */
   #about {
     max-width: 1200px;
-    text-align: left;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+  }
+  #about-img {
+    width: 50%;
+    margin: 0 0 30px 50px;
   }
   #about-img > img {
-    width: 60%;
-    border-radius: 100px;
-    position: relative;
-    left: 20px;
+    width: 100%;
+    border-radius: 50%;
+    max-width: 300px;
   }
   #about-content {
-    margin: 0;
-    position: relative;
-    right: 70px;
-    bottom: 20px;
+    width: 50%;
+    margin: 30px 0 30px 0;
+    text-align: left;
   }
 
   /* ワークス */
@@ -117,15 +118,16 @@ a {
     text-align: left;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
   #works1, #works2, #works3 {
     margin: 10px;
-    width: 16%;
+    width: 20%;
     text-align: center;
   }
   .works-img {
     padding: 0;
-    margin: 0;
+    margin: 10px;
     width: 100%;
   }
 
@@ -147,13 +149,91 @@ a {
   
   /* ヘッダー */
   #header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 34px;
+    margin: 20px;
   }
   #nav-sp {
-    display: flex;
-    margin-right: 0;
+    margin: 0 10px;
+    font-weight: bold;
+    display: inline;
   }
   #nav-pc {
     display: none;
+  }
+  
+  .myprofile {
+    text-decoration: none;
+    border: solid 1px black;
+    font-weight: bold;
+  }
+  .myprofile:link {
+    color: black;
+  }
+  .myprofile:visited{
+    color: black;
+  }
+  .myprofile:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  .myprofile:active {
+    color: black;
+  }
+  #nav-sp > a {
+    text-decoration: none;
+  }
+  #nav-sp > a:link {
+    color: black;
+  }
+  #nav-sp > a:visited {
+    color: black;
+  }
+  #nav-sp > a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  #nav-sp > a:active {
+    color: black;
+  }
+
+
+  /* アバウト */
+  #about {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #about-img > img {
+    margin: 20% auto 0 auto;
+    border-radius: 50%;
+  }
+  #about-content {
+    text-align: left;
+    text-wrap: wrap;
+    margin: 0 auto 0 10%;
+  }
+
+  /* ワークス */
+  #works {
+    text-align: left;
+    display: block;
+  }
+  #works1, #works2, #works3 {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+  }
+  .works-img {
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* コピーライト */
+  #footer {
+    margin: 20px;
   }
 }
