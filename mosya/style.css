@@ -35,7 +35,6 @@ a {
 @media screen and (min-width: 768px) {
   /* 横幅設定 */
   body {
-    min-width: 960px;
     margin: 0 auto 0 auto;
   }
   
@@ -149,7 +148,6 @@ a {
 @media screen and (max-width: 767px) {
   /* 横幅設定 */
   body {
-    min-width: 375px;
     margin: 0 auto 0 auto;
   }
   
